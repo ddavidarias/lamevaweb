@@ -1,0 +1,52 @@
+@charset "utf-8";
+
+ *{
+	margin:0px;
+	padding:0px;
+  
+    }
+    
+body{
+background-color: rgb(150, 206, 150);
+
+}
+
+nav{
+  height: 50px;
+  background-color: beige;
+}
+
+
+aside{
+  width: 25%;
+}
+
+
+.accordion{
+background-color: rgb(118, 119, 182);
+color: rgb(175, 118, 118);
+cursor: pointer;
+padding: 18px;
+width: 100%;
+border: none;
+outline: none;
+transition: 0.4s;
+font-size: 14px;
+text-align: center;
+}
+
+a:active, .accordion {
+background-color: rgb(175,118,118);
+color: white;
+}
+
+.panel {
+padding: 0px;
+/* display: none; */ /*I don't know why put this, but was the reason for non working accordion */
+overflow: hidden;
+max-height: 0;
+transition: max-height 0.2s ease-out;
+text-align: center;
+}
+
+    
